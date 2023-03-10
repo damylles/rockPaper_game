@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedra Papel</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container text-center header">
+      <h1>Pedra Papel e Tesoura</h1>
+    </div>
+    <div class="container text-center sub-header">
+        <div class="row">
+            <div class="col" id="resultado">
+                Escolha uma opcao e clique Jogar.
+            </div>
+          </div>
+      <div class="row">
+        <div class="col">Humano</div>
+        <div class="col">Computador</div>
+
+      </div>
+     
+      <div class="row">
+        <div class="col"> 
+            <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col pedra-radio">
+                  <input type="radio" name="human-choice" value="pedra" />
+                </div>
+                <div class="col pedra-title">Pedra</div>
+                <div class="col pedra-image">
+                  <img src="assets/pedra.png" class="image" alt="pedra" />
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col papel-radio">
+                  <input type="radio" name="human-choice" value="papel" />
+                </div>
+                <div class="col papel-title">Papel</div>
+                <div class="col papel-image">
+                  <img src="assets/papel.png" class="image" alt="papel" />
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col tesoura-radio">
+                  <input type="radio" name="human-choice" value="tesoura" />
+                </div>
+                <div class="col tesoura-title">Tesoura</div>
+                <div class="col tesoura-image">
+                  <img src="assets/tesoura.png" class="image" alt="tesoura" />
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        <div class="col"> <div id="computer-choice"></div>
+    </div>
+    </div>
+       
+     
+    <div class="container text-center">
+      <input type="button" class="button" value="jogar"  id="play"/>
+    </div>
+   
+    <script src="js/script.js" />
+  </body>
+</html>
